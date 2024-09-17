@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Главная страница сайта">
+  <meta name="keywords" content="главная, первая, акции, бестселлеры">
+  <meta name="author" content="Котельникова Елизавета">
+  <link rel="stylesheet" href="outline-prototype-label.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="top-container">
+    <a href="index.html">
+      <img src="logoSecond.png" alt="logo" width="250"
+           height="100">
+    </a>
+      <div class="motto">
+        <label>
+          <h1>Читать в удовольствие</h1>
+        </label>
+      </div>
+      <div class="pics">
+        <div class="account">
+          <form action="page/account.html" target="_blank">
+            <button src="AccountPic.png" alt="Account picture" width="250"
+                    height="100">
+              Аккаунт
+            </button>
+          </form>
+        </div>
+        <div class="cart">
+          <button src="Cart.png" alt="Cart picture" width="250"
+               height="100">
+            Корзина
+          </button>
+      </div>
+  </div>
+  </div>
+    <div class="lower-container">
+      <div class="dropdown">
+        <button class="catalogbtn">Каталог</button>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="#">Книги</a></li>
+            <li><a href="#">Канцелярия</a></li>
+            <li><a href="#">Другое</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="search">
+        Поиск
+      </div>
+      <div class="search">
+        О нас
+      </div>
+    </div>
+</header>
+<main id="main content">
+  <section class="sales">
+    <div class="slider-container">
+      <div class="slider">
+        <img src="saleOne.png" alt="Акция №1">
+        <img src="saleTwo.png" alt="Акция №2">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+      <div>
+        Тут будет картиночка, наверно
+      </div>
+    </div>
+  </section>
+  <section class="sales">
+    <div class="slider-container">
+      <div class="slider">
+        <img src="saleOne.png" alt="Акция №1">
+        <img src="saleTwo.png" alt="Акция №2">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    </div>
+  </section>
+  <section class="bestsellers">
+    <div class="bestsellers_title-wrapper">
+      <h2>Бестселлеры</h2>
+    </div>
+    <div class="items-slider_slider">
+      <ul>
+        <li>
+          <div class="item-wrapper">
+            <img src="something.png"></img>
+            <div class="item-text_wrapper">
+              <a href="/item/HarryPotter" Гарри Поттер и Принц-полукровка></a>
+          </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-wrapper">
+            <img src="something2.png"></img>
+            <div class="item-text_wrapper">
+              <a href="/item/SherlockHolmes" Приключения Шерлока Холмса></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    </div>
+  </section>
+</main>
+<footer class="technologies">
+ <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров. Подпишитесь на наши обновления в социальных сетях</h2>
+  <nav class="socials">
+    <ul>
+      <li><img src="vk.png" alt="vkLogo" width="100"
+               height="100"></li>
+      <li><img src="tg.png" alt="tgLogo" width="100"
+               height="100"></li>
+    </ul>
+  </nav>
+</footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
