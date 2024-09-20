@@ -8,4 +8,4 @@
 
 Личный кабинет:
 
-![Личный кабинет](https://github.com/user-attachments/assets/cd789111-7815-4c96-9964-a7a540c83d10)
+![Личный кабинет](https://github.com/user-attachments/assets/f898a7fe-c305-4ff3-bf61-d245e4b1da96)
