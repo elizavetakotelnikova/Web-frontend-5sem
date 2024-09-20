@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="О нас">
+  <meta name="keywords" content="описание, компания, информация">
+  <meta name="author" content="Котельникова Елизавета">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Описание компании</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="body">
+<script src="../src/outline-control.js"></script>
+<header class="header">
+  <div class="top-container">
+    <a href="../index.html">
+      <img src="../public/pics/logoSecond.png" alt="logo" width="250"
+           height="100">
+    </a>
+      <div class="motto">
+        <label>
+          <h1>Читать в удовольствие</h1>
+        </label>
+      </div>
+      <div class="pics">
+        <div class="account">
+          <form action="../page/account.html" target="_blank">
+            <button src="AccountPic.png" alt="Account picture" width="110"
+                    height="100">
+              Аккаунт
+            </button>
+          </form>
+        </div>
+        <div class="cart">
+          <button src="Cart.png" alt="Cart picture" width="250"
+               height="100">
+            Корзина
+          </button>
+      </div>
+  </div>
+  </div>
+    <div class="lower-container">
+      <div class="dropdown">
+        <button class="catalogbtn">Каталог</button>
+        <div class="dropdown-content">
+          <ul style="list-style-type:none">
+            <li><a href="#">Книги</a></li>
+            <li><a href="#">Канцелярия</a></li>
+            <li><a href="#">Другое</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="search">
+        Поиск
+      </div>
+      <div class="about">
+        <form action="../page/about.html" target="_blank">
+          <button  width="250"
+                   height="100">
+            О нас
+          </button>
+        </form>
+      </div>
+    </div>
+</header>
+<main id="main content">
+  <section class="description">
+    <div class="text-wrapper">
+      <h2>О нас</h2>
+      <p>Книжный дом - новый интернет-магазин, который предоставляет возможность читать выгодно, наслаждаясь любимыми книжными изданиями самым выгодным способом.</p>
+      <aside>
+        <p>Наш интернет-магазин был открыт в 2024 году, и рад предоставить дополнитльную скидку своим первым покупателям</p>
+      </aside>
+
+      <code>
+
+      </code>
+    </div>
+  </section>
+  <section class="code-snippet">
+    <div class="text-wrapper">
+      <h2>Сниппет кода (по ТЗ)</h2>
+      <pre>
+        <code>
+        class Solution {
+            public:
+            bool isPalindrome(string s) {
+                int beginning = 0;
+                int end = s.length() - 1;
+                while (beginning <= end) {
+                    if (!(isdigit(s[beginning]) || isalpha(s[beginning]))) beginning++;
+                    else if (!(isdigit(s[end]) || isalpha(s[end]))) end--;
+                    else {
+                    if (tolower(s[beginning]) != tolower(s[end])) return false;
+                    beginning++;
+                    end--;
+                }
+                return true;
+            }
+        };
+      </code>
+      </pre>
+    </div>
+  </section>
+</main>
+<footer class="technologies">
+  <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
+  <p>Подпишитесь на наши обновления в социальных сетях</p>
+  <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
+  <nav class="socials">
+    <ul style="list-style-type:none">
+      <li><img src="../public/pics/vkLogo.png" alt="vkLogo" width="40"
+               height="40"></li>
+      vk.me/knizniy_dom
+      <li><img src="../public/pics/tgLogo.jpg" alt="tgLogo" width="40"
+               height="40"></li>
+      @knizniyDom
+    </ul>
+  </nav>
+</footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -5,16 +5,16 @@
   <meta name="description" content="Главная страница сайта">
   <meta name="keywords" content="главная, первая, акции, бестселлеры">
   <meta name="author" content="Котельникова Елизавета">
-  <link rel="stylesheet" href="outline-prototype-label.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="body">
+<script src="src/outline-control.js"></script>
 <header class="header">
   <div class="top-container">
     <a href="index.html">
-      <img src="logoSecond.png" alt="logo" width="250"
+      <img src="public/pics/logoSecond.png" alt="logo" width="250"
            height="100">
     </a>
       <div class="motto">
@@ -25,14 +25,14 @@
       <div class="pics">
         <div class="account">
           <form action="page/account.html" target="_blank">
-            <button src="AccountPic.png" alt="Account picture" width="250"
+            <button src="AccountPic.png" alt="Account picture" width="110"
                     height="100">
               Аккаунт
             </button>
           </form>
         </div>
         <div class="cart">
-          <button src="Cart.png" alt="Cart picture" width="250"
+          <button src="Cart.png" alt="Cart picture" width="110"
                height="100">
             Корзина
           </button>
@@ -43,7 +43,7 @@
       <div class="dropdown">
         <button class="catalogbtn">Каталог</button>
         <div class="dropdown-content">
-          <ul>
+          <ul style="list-style-type:none">
             <li><a href="#">Книги</a></li>
             <li><a href="#">Канцелярия</a></li>
             <li><a href="#">Другое</a></li>
@@ -53,8 +53,13 @@
       <div class="search">
         Поиск
       </div>
-      <div class="search">
-        О нас
+      <div class="about">
+        <form action="page/about.html" target="_blank">
+          <button  width="250"
+                  height="100">
+            О нас
+          </button>
+        </form>
       </div>
     </div>
 </header>
@@ -62,8 +67,8 @@
   <section class="sales">
     <div class="slider-container">
       <div class="slider">
-        <img src="saleOne.png" alt="Акция №1">
-        <img src="saleTwo.png" alt="Акция №2">
+        <img src="public/pics/saleOne.png" alt="Акция №1">
+        <img src="public/pics/saleTwo.png" alt="Акция №2">
       </div>
       <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
       <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
@@ -77,10 +82,10 @@
       <h2>Бестселлеры</h2>
     </div>
     <div class="items-slider_slider">
-      <ul>
+      <ul style="list-style-type:none">
         <li>
           <div class="item-wrapper">
-            <img src="something.png"></img>
+            <img src="public/pics/harryPotter.png" alt="Гарри Поттер и Принц-полукровка"></img>
             <div class="item-text_wrapper">
               <a href="/item/HarryPotter" Гарри Поттер и Принц-полукровка></a>
           </div>
@@ -88,7 +93,7 @@
         </li>
         <li>
           <div class="item-wrapper">
-            <img src="something2.png"></img>
+            <img src="public/pics/sherlockHolmes.png" alt="Приключения Шерлока Холмса"></img>
             <div class="item-text_wrapper">
               <a href="/item/SherlockHolmes" Приключения Шерлока Холмса></a>
             </div>
@@ -101,14 +106,17 @@
   </section>
 </main>
 <footer class="technologies">
- <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров. Подпишитесь на наши обновления в социальных сетях</h2>
-  <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"</blockquote>
+ <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
+  <p>Подпишитесь на наши обновления в социальных сетях</p>
+  <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033;</blockquote>
   <nav class="socials">
-    <ul>
-      <li><img src="vk.png" alt="vkLogo" width="100"
-               height="100"></li>
-      <li><img src="tg.png" alt="tgLogo" width="100"
-               height="100"></li>
+    <ul style="list-style-type:none">
+      <li><img src="public/pics/vkLogo.png" alt="vkLogo" width="40"
+               height="40"></li>
+      vk.me/knizniy_dom
+      <li><img src="public/pics/tgLogo.jpg" alt="tgLogo" width="40"
+               height="40"></li>
+      @knizniyDom
     </ul>
   </nav>
 </footer>
