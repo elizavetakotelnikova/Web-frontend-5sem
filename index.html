@@ -13,27 +13,25 @@
 <script src="src/outline-control.js"></script>
 <header class="header">
   <div class="top-container">
-    <a href="index.html">
-      <img src="public/pics/logoSecond.png" alt="logo" width="250"
+    <div>
+      <a href="index.html">
+      <img href="index.html" src="public/pics/logoSecond.png" alt="logo" width="250"
            height="100">
-    </a>
-      <div class="motto">
-        <label>
-          <h1>Читать в удовольствие</h1>
-        </label>
-      </div>
-      <div class="pics">
+      </a>
+    </div>
+    <div class="motto">
+      <h1>Читать в удовольствие</h1>
+    </div>
+      <div class="top-menu">
         <div class="account">
           <form action="page/account.html" target="_blank">
-            <button src="AccountPic.png" alt="Account picture" width="110"
-                    height="100">
+            <button src="AccountPic.png" alt="Account picture">
               Аккаунт
             </button>
           </form>
         </div>
         <div class="cart">
-          <button src="Cart.png" alt="Cart picture" width="110"
-               height="100">
+          <button src="Cart.png" alt="Cart picture">
             Корзина
           </button>
       </div>
@@ -65,14 +63,18 @@
 </header>
 <main id="main content">
   <section class="sales">
-    <div class="slider-container">
-      <div class="slider">
-        <img src="public/pics/saleOne.png" alt="Акция №1">
-        <img src="public/pics/saleTwo.png" alt="Акция №2">
+    <div class="secondLayerContainer">
+      <div class="slider-container">
+        <div class="slider">
+        <img src="public/pics/salesOneNew.png" alt="Акция №1">
+        <img src="public/pics/salesSecondNew.png" alt="Акция №2">
+        </div>
+        <div>
+          <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+          <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+        </div>
       </div>
-      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-      <div>
+      <div class="something">
         Тут будет картиночка, наверно
       </div>
     </div>
@@ -100,15 +102,13 @@
           </div>
         </li>
       </ul>
-      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
     </div>
   </section>
 </main>
 <footer class="technologies">
- <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
+ <p><h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2></p>
   <p>Подпишитесь на наши обновления в социальных сетях</p>
-  <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033;</blockquote>
+  <p><blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033;</blockquote></p>
   <nav class="socials">
     <ul style="list-style-type:none">
       <li><img src="public/pics/vkLogo.png" alt="vkLogo" width="40"
