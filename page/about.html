@@ -7,39 +7,38 @@
   <meta name="author" content="Котельникова Елизавета">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Описание компании</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="../public/pageAboutStyle.css">
 </head>
 <body class="body">
-<script src="../src/outline-control.js"></script>
 <header class="header">
-  <div class="top-container" style="display: inline">
-    <div class="logo-wrapper" style="width: 250px; height: 100px">
+  <div class="top-container">
+    <div class="logo-wrapper">
       <a href="../index.html">
-        <img href="index.html" src="../public/pics/logoSecond.png" alt="logo" width="250"
-             height="100">
+        <img href="index.html" src="../public/pics/logoSecond.png" alt="logo">
       </a>
     </div>
-    <div class="motto" style="width: 250px; height: 100px">
+    <div class="motto">
       <h1>Читать в удовольствие</h1>
     </div>
       <div class="top-menu">
         <div class="account">
           <form action="../page/account.html" target="_blank">
-            <button src="AccountPic.png" alt="Account picture">
+            <button id="accountBtn" src="AccountPic.png" alt="Account picture">
               Аккаунт
             </button>
           </form>
         </div>
         <div class="cart">
-          <button src="Cart.png" alt="Cart picture">
+          <button id="cartBtn" src="Cart.png" alt="Cart picture">
             Корзина
           </button>
         </div>
       </div>
   </div>
     <div class="lower-container">
+      <div class="lower-container-content">
       <div class="dropdown">
-        <button class="catalogbtn">Каталог</button>
+        <button id="catalogBtn">Каталог</button>
         <div class="dropdown-content">
           <ul style="list-style-type:none">
             <li><a href="#">Книги</a></li>
@@ -49,21 +48,22 @@
         </div>
       </div>
       <div class="search">
-        Поиск
+        <form class="search-form">Поиск</form>
       </div>
       <div class="about">
         <form action="../page/about.html" target="_blank">
-          <button  width="250"
+          <button id="aboutBtn" width="250"
                    height="100">
             О нас
           </button>
         </form>
       </div>
     </div>
+    </div>
 </header>
-<main id="main content">
+<main id="main-content">
   <section class="description">
-    <div class="text-wrapper">
+    <div class="description-text-wrapper">
       <h2>О нас</h2>
       <p>Книжный дом - новый интернет-магазин, который предоставляет возможность читать выгодно, наслаждаясь любимыми книжными изданиями самым <strong> выгодным </strong>способом.</p>
       <aside>
@@ -78,7 +78,7 @@
     </div>
   </section>
   <section class="code-snippet">
-    <div class="text-wrapper">
+    <div class="code-text-wrapper">
       <h2>Сниппет кода (по ТЗ)</h2>
       <pre>
         <code>
@@ -102,8 +102,8 @@
       </pre>
     </div>
   </section>
-  <section>
-    <div class="ASCII">
+  <section class="ASCII-info">
+    <div class="ASCII-wrapper">
       <article>
         <h2>ASCII (по ТЗ)</h2>
         <pre>
@@ -140,17 +140,19 @@
   </section>
 </main>
 <footer class="technologies">
-  <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
-  <p>Подпишитесь на наши обновления в социальных сетях</p>
-  <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
+  <div class="footer-text">
+    <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
+    <p>Подпишитесь на наши обновления в социальных сетях</p>
+    <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
+  </div>
   <nav class="socials">
     <ul style="list-style-type:none">
-      <li><img src="../public/pics/vkLogo.png" alt="vkLogo" width="40"
-               height="40"></li>
-      vk.me/knizniy_dom
-      <li><img src="../public/pics/tgLogo.jpg" alt="tgLogo" width="40"
-               height="40"></li>
-      @knizniyDom
+      <li><span class="socials-logo"><img src="../public/pics/vkLogo.png" alt="vkLogo" width="40"
+                     height="40"></span>
+      <span class="socials-text">vk.me/knizniy_dom</span></li>
+      <li><span class="socials-logo"><img src="../public/pics/tgLogo.jpg" alt="tgLogo" width="40"
+                     height="40"></span>
+      <span class="socials-text">@knizniyDom</span></li>
     </ul>
   </nav>
 </footer>
