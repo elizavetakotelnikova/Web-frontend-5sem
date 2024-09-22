@@ -20,32 +20,31 @@
     <div class="motto">
       <h1>Читать в удовольствие</h1>
     </div>
-    <div class="top-menu">
+    <nav class="top-menu">
       <div class="account">
-        <form action="./page/account.html" target="_blank">
-          <button id="accountBtn" src="AccountPic.png" alt="Account picture">
-            Аккаунт
-          </button>
-        </form>
+        <a href="./page/account.html">
+        Аккаунт
+      </a>
       </div>
       <div class="cart">
-        <button id="cartBtn" src="Cart.png" alt="Cart picture">
+        <a href="/page/cart.html">
           Корзина
-        </button>
+        </a>
       </div>
+    </nav>
     </div>
   </div>
   <div class="lower-container">
     <div class="lower-container-content">
       <div class="dropdown">
         <button id="catalogBtn">Каталог</button>
-        <div class="dropdown-content">
+        <nav class="dropdown-content">
           <ul style="list-style-type:none">
             <li><a href="#">Книги</a></li>
             <li><a href="#">Канцелярия</a></li>
             <li><a href="#">Другое</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
       <div class="search">
         <form class="search-form">Поиск</form>
@@ -76,7 +75,7 @@
       </div>
       <div class="something">
         <div class="something-text-wrapper">
-          Тут будет картиночка, наверно
+          <img src="./public/pics/bookShelf.png">
         </div>
       </div>
     </div>
@@ -107,6 +106,7 @@
         </ul>
       </div>
     </div>
+  </section>
 </main>
 <footer class="technologies">
   <div class="footer-text">
@@ -115,13 +115,10 @@
     <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
   </div>
   <nav class="socials">
-    <ul style="list-style-type:none">
-      <li><span class="socials-logo"><img src="./public/pics/vkLogo.png" alt="vkLogo" width="40"
-                                          height="40"></span>
-        <span class="socials-text">vk.me/knizniy_dom</span></li>
-      <li><span class="socials-logo"><img src="./public/pics/tgLogo.jpg" alt="tgLogo" width="40"
-                                          height="40"></span>
-        <span class="socials-text">@knizniyDom</span></li>
+    <ul>
+      <li><a href="https://vk.com" id="vkLogo"><img src="../public/pics/vkLogo.png"></a></li>
+      <li><a href="https://web.telegram.org/" id="tgLogo"><img src="../public/pics/tgLogo.jpg"> </a>
+      </li>
     </ul>
   </nav>
 </footer>

@@ -29,6 +29,10 @@ body {
     background-size: contain;
 }
 
+blockquote {
+    margin-left: 0;
+}
+
 h1 {
     font-size: 29px;
     line-height: 39px;
@@ -44,10 +48,8 @@ h1 {
 }
 
 button {
-    font-family: "JetBrains Mono", Inter, system-ui, sans-serif;
-    background-color: rgba(25, 25, 28, 0.5);
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     cursor: pointer;
-    color: rgba(255, 255, 255, 1);
 }
 
 button:hover {
@@ -82,11 +84,12 @@ button:hover {
 .motto {
     display: flex;
     position: relative;
-    width: 850px;
+    width: 900px;
     height: 100px;
     color: #000000;
-    margin-left: 30px;
-    margin-right: 30px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
 }
@@ -94,26 +97,48 @@ button:hover {
 .top-menu {
     display: flex;
     position: relative;
-    width: 250px;
+    margin-right: 0;
+    width: 300px;
     height: 100px;
     align-items: center;
     justify-content: center;
 }
 
+.top-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.top-menu a:hover {
+    text-decoration: underline;
+}
+
 .account {
     width: 110px;
-    margin-right: 30px;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #accountBtn, #cartBtn, #aboutBtn, #catalogBtn {
     width: 110px;
     height: 50px;
-    color: #f0f8ff ;
+    color: #f0f8ff;
+    align-self: center;
 }
 
 .cart {
     width: 110px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .lower-container {
@@ -125,10 +150,11 @@ button:hover {
 
 .lower-container-content {
     display: flex;
+    align-items: center;
 }
 
 .dropdown {
-    display: flex;
+    display: inline-block;
     position: relative;
     width: 250px;
     height: 100px;
@@ -138,6 +164,24 @@ button:hover {
 
 }
 
+#catalogBtn {
+    background-color: #FFFFFF;
+    border: darkgray 1px solid;
+    color: #000000;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#aboutBtn {
+    background-color: #FFFFFF;
+    border: darkgray 1px solid;
+    color: #000000;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -145,7 +189,34 @@ button:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    text-align: center;
+    margin: 0;
+    top: 88%;
+    left: 58%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+.dropdown-content ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    zoom:1;
+    *display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .search {
     display: flex;
@@ -153,7 +224,8 @@ button:hover {
     width: 850px;
     height: 100px;
     color: #000000;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
 }
@@ -163,7 +235,7 @@ button:hover {
     position: relative;
     width: 750px;
     height: 50px;
-    color: #000000;
+    color: #a9a9a9a9;
     margin: 25px 50px;
     align-items: center;
     justify-content: center;
@@ -173,8 +245,8 @@ button:hover {
 .about {
     display: flex;
     width: 280px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 0;
+    margin-right: 0;
     align-items: center;
     justify-content: center;
 }
@@ -202,11 +274,8 @@ button:hover {
 }
 
 .something-text-wrapper {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 45%;
+    position: relative;
 }
 
 .secondLayer-container {
@@ -263,7 +332,18 @@ button:hover {
     margin-left: 30px;
 }
 
-.socials-logo {
-    margin-left: 20px;
+.socials ul {
+    list-style-type:none;
+    display: inline-flex;
+    height: 30px
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+#tgLogo {
+    margin-left: 30px;
 }
 
