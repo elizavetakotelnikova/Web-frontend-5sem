@@ -319,6 +319,12 @@ button:hover {
     display: flex;
 }
 
+.prev-button, .next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .bestsellers_title-wrapper {
     display: block;
     text-align: left;

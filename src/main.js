@@ -1,4 +1,4 @@
-// Getting sliders elements
+// Getting sliders elements from html document
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
@@ -6,19 +6,19 @@ const slides = Array.from(slider.querySelectorAll('img'));
 const slideCount = slides.length;
 let slideIndex = 0;
 
-// Processing buttons
+// Processing buttons on events (event listeners)
 prevButton.addEventListener('click', showPreviousSlide);
 nextButton.addEventListener('click', showNextSlide);
-
-// Show previous slide
-function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-  updateSlider();
-}
 
 // Show next slide
 function showNextSlide() {
   slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+// Show previous slide
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
   updateSlider();
 }
 
@@ -31,6 +31,8 @@ function updateSlider() {
       slide.style.display = 'none';
     }
   });
+
+  setTimeout(showNextSlide, 3000); // Change image every 3 seconds
 }
 
 // Initialize slider
