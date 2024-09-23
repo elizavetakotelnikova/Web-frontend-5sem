@@ -69,7 +69,6 @@ button:hover {
     width: 100%;
     margin: 0;
     height: 210px;
-    margin-left: 0px;
 }
 .top-container {
     display: flex;
@@ -141,6 +140,10 @@ button:hover {
     color: #f0f8ff;
     align-self: center;
     border-radius: 5%;
+}
+
+#aboutBtn:hover {
+    background-color: #f1f1f1;
 }
 
 .cart {
@@ -302,7 +305,7 @@ button:hover {
     margin-left: 30px;
 }
 
-.something {
+.bannerRight {
     position: relative;
     width: 400px;
     display: block;
@@ -311,7 +314,7 @@ button:hover {
     text-align: center;
 }
 
-.something-text-wrapper {
+.bannerRight-text-wrapper {
     left: 45%;
     position: relative;
 }
@@ -344,19 +347,31 @@ button:hover {
     display: block;
 }
 
+#bestellers-list {
+    padding: 0;
+    list-style-type:none;
+    display: flex;
+}
+
+#bestellers-list li {
+    border: none;
+    vertical-align: bottom;
+    list-style-type: none;
+}
+
 .items-slider_slider {
     display: flex;
     width: 100%;
     height: fit-content;
 }
 
-#bestellers-list {
-    list-style-type:none;
-    display: flex;
-}
-
 .item-wrapper {
     margin-left: 30px;
+}
+
+.item-text_wrapper img {
+    width: 250px;
+    height: 421px;
 }
 
 .items-slider_slider a {
@@ -376,15 +391,16 @@ button:hover {
 
 .technologies {
     border-top: #000000 3px solid;
-    margin-bottom: 36px;
+    margin-bottom: 0;
     align-self: center;
     width: 100%;
-    color:#000000;
+    background-color: #f1f1f1;
     text-align: left;
 }
 
 .footer-text {
     margin-left: 30px;
+    color:#000000;
 }
 
 .socials ul {

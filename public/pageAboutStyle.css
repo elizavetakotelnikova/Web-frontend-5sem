@@ -143,6 +143,10 @@ button:hover {
     border-radius: 5%;
 }
 
+#aboutBtn:hover {
+    background-color: #f1f1f1;
+}
+
 .cart {
     width: 110px;
     margin-left: 15px;
@@ -335,15 +339,16 @@ button:hover {
 
 .technologies {
     border-top: #000000 3px solid;
-    margin-bottom: 36px;
+    margin-bottom: 0;
     align-self: center;
     width: 100%;
-    color:#000000;
+    background-color: #f1f1f1;
     text-align: left;
 }
 
 .footer-text {
     margin-left: 30px;
+    color:#000000;
 }
 
 .socials ul {
@@ -361,4 +366,3 @@ button:hover {
 #tgLogo {
     margin-left: 30px;
 }
-
