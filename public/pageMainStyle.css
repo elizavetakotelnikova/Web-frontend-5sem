@@ -143,7 +143,7 @@ button:hover {
     border-radius: 5%;
 }
 
-#aboutBtn:hover {
+#aboutBtn:hover, #catalogBtn {
     background-color: #f1f1f1;
 }
 
@@ -204,10 +204,9 @@ button:hover {
     z-index: 1;
     text-align: center;
     margin: 0;
-    top: 88%;
-    left: 58%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .dropdown-content ul {
