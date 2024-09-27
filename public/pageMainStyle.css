@@ -136,14 +136,14 @@ button:hover {
 }
 
 #accountBtn, #cartBtn, #aboutBtn, #catalogBtn {
-    width: 110px;
-    height: 50px;
+    width: 100%;
+    height: 60%;
     color: #f0f8ff;
     align-self: center;
     border-radius: 5%;
 }
 
-#aboutBtn:hover, #catalogBtn {
+#aboutBtn:hover {
     background-color: #f1f1f1;
 }
 
@@ -162,17 +162,19 @@ button:hover {
 .lower-container-content {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .dropdown {
+    margin-left: 30px;
     display: inline-block;
     position: relative;
-    width: 250px;
-    height: 100px;
+    width: 13.361111111%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     color: black;
-
 }
 
 #catalogBtn {
@@ -195,18 +197,31 @@ button:hover {
     font-size: 18px;
 }
 
+#aboutForm {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .dropdown-content {
+    width: 100%;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     margin: 0;
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    top: 80%;
+    /* left: 50%; */
+    -ms-transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    height: 130%;
+    min-height: 130px;
+    min-width: 140px;
+    font-size: 16px;
 }
 
 .dropdown-content ul {
@@ -233,8 +248,8 @@ button:hover {
 .search {
     display: flex;
     position: relative;
-    width: 850px;
-    height: 100px;
+    width: 59.027777777%;
+    height: 100%;
     color: #000000;
     margin-left: auto;
     margin-right: auto;
@@ -285,9 +300,10 @@ button:hover {
 
 .about {
     display: flex;
-    width: 280px;
+    width: 13.361111111%;
+    height: 100%;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 30px;
     align-items: center;
     justify-content: center;
 }
@@ -420,4 +436,3 @@ button:hover {
 #tgLogo {
     margin-left: 30px;
 }
-
