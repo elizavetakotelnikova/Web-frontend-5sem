@@ -315,6 +315,13 @@ button:hover {
     border: none;
 }
 
+@media(max-width: 500px) {
+    .top-menu {
+        margin-left: auto;
+        width: 60%;
+    }
+}
+
 @media(max-width: 700px) {
     .motto {
         display: none;
