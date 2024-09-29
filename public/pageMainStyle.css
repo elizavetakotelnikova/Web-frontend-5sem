@@ -322,6 +322,16 @@ button:hover {
     border: none;
 }
 
+.about {
+    display: flex;
+    width: 13.361111111%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 500px) {
     .motto {
         display: none;
@@ -345,6 +355,16 @@ button:hover {
         width: 60px;
         height: 60px;
     }
+
+    .dropdown {
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
+    .about {
+        margin-left: auto;
+        margin-right: auto
+    }
 }
 
 @media screen and (min-width:501px) and (max-width:700px) {
@@ -366,16 +386,6 @@ button:hover {
         width: 25%;
     }
 
-}
-
-.about {
-    display: flex;
-    width: 13.361111111%;
-    height: 100%;
-    margin-left: 0;
-    margin-right: 30px;
-    align-items: center;
-    justify-content: center;
 }
 
 #main-content {
@@ -497,6 +507,16 @@ button:hover {
 
 .item-text_wrapper {
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .sales {
+        margin-left: 15px;
+    }
+
+    .bestsellers {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width: 700px) {
