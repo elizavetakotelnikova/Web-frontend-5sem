@@ -185,12 +185,10 @@ button:hover {
 
 .dropdown {
     margin-left: 30px;
-    display: inline-block;
+    display: flex;
     position: relative;
     width: 13.361111111%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
     color: black;
 }
 
@@ -254,6 +252,11 @@ button:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+}
+
+.dropdown img {
+    display: none;
+    align-self: center;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -325,6 +328,20 @@ button:hover {
     .top-menu {
         margin-left: auto;
         width: 60%;
+    }
+
+    #catalogBtn {
+        display: none;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .dropdown img {
+        display: block;
+        width: 60px;
+        height: 60px;
     }
 }
 
