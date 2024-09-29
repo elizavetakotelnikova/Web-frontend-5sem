@@ -512,6 +512,7 @@ button:hover {
 @media screen and (max-width: 500px) {
     .sales {
         margin-left: 15px;
+        margin-right: 15px;
     }
 
     .bestsellers {
