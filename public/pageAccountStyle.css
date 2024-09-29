@@ -185,12 +185,10 @@ button:hover {
 
 .dropdown {
     margin-left: 30px;
-    display: inline-block;
+    display: flex;
     position: relative;
     width: 13.361111111%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
     color: black;
 }
 
@@ -256,6 +254,11 @@ button:hover {
     display: block;
 }
 
+.dropdown img {
+    display: none;
+    align-self: center;
+}
+
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -296,6 +299,7 @@ button:hover {
     border: none;
     font-size: 18px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .search-input:focus {
@@ -325,6 +329,20 @@ button:hover {
     .top-menu {
         margin-left: auto;
         width: 60%;
+    }
+
+    #catalogBtn {
+        display: none;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .dropdown img {
+        display: block;
+        width: 60px;
+        height: 60px;
     }
 }
 

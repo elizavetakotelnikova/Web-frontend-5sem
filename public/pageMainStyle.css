@@ -299,6 +299,7 @@ button:hover {
     border: none;
     font-size: 18px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .search-input:focus {
