@@ -14,6 +14,7 @@
     color: rgba(255, 255, 255, 0.87);
     background-color: #FFFFFF;
     text-align: center;
+    line-height: normal;
 }
 
 body {
@@ -69,27 +70,44 @@ button:hover {
     width: 100%;
     margin: 0;
     height: 210px;
-    margin-left: 0px;
 }
 .top-container {
     display: flex;
+    /*background-color: #FAF8F7;*/
     width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    border-bottom: 5px solid black;
+    height: 105px;
+    margin-top: 0;
+    border-bottom: 1px solid #EBEBEB;
 }
 
 .logo-wrapper {
     display: flex;
-    height: 100px;
-    width: 250px;
+    height: 100%;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    min-width: 175px;
+}
+
+#logo_link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#logo_link img {
+    width: 100%;
+    max-width: 250px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .motto {
     display: flex;
     position: relative;
-    width: 900px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     color: #000000;
     max-width: fit-content;
     margin-left: auto;
@@ -101,9 +119,10 @@ button:hover {
 .top-menu {
     display: flex;
     position: relative;
+    width: 25%;
     margin-right: 0;
-    width: 300px;
-    height: 100px;
+    margin-left: auto;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -122,8 +141,7 @@ button:hover {
 }
 
 .account {
-    width: 110px;
-    margin-right: 15px;
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -136,20 +154,19 @@ button:hover {
 }
 
 #accountBtn, #cartBtn, #aboutBtn, #catalogBtn {
-    width: 110px;
-    height: 50px;
+    width: 100%;
+    height: 60%;
     color: #f0f8ff;
     align-self: center;
     border-radius: 5%;
 }
 
-#aboutBtn:hover {
+#aboutBtn:hover, #catalogBtn:hover {
     background-color: #f1f1f1;
 }
 
 .cart {
-    width: 110px;
-    margin-left: 15px;
+    width: 50%;
 }
 
 .lower-container {
@@ -162,22 +179,24 @@ button:hover {
 .lower-container-content {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .dropdown {
+    margin-left: 30px;
     display: inline-block;
     position: relative;
-    width: 250px;
-    height: 100px;
+    width: 13.361111111%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     color: black;
-
 }
 
 #catalogBtn {
     background-color: #FFFFFF;
-    border: darkgray 1px solid;
+    border: #a9a9a9 1px solid;
     color: #000000;
     font-size: 18px;
     margin: 0;
@@ -195,19 +214,31 @@ button:hover {
     font-size: 18px;
 }
 
+#aboutForm {
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+
 .dropdown-content {
+    width: 100%;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     margin: 0;
-    top: 88%;
-    left: 58%;
+    top: 80%;
+    /* left: 50%; */
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    height: 130%;
+    min-height: 130px;
+    min-width: 140px;
+    font-size: 16px;
 }
 
 .dropdown-content ul {
@@ -234,8 +265,8 @@ button:hover {
 .search {
     display: flex;
     position: relative;
-    width: 850px;
-    height: 100px;
+    width: 59.027777777%;
+    height: 100%;
     color: #000000;
     margin-left: auto;
     margin-right: auto;
@@ -284,11 +315,33 @@ button:hover {
     border: none;
 }
 
+@media(max-width: 700px) {
+    .motto {
+        display: none;
+    }
+
+    .top-menu {
+        margin-left: auto;
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 701px) {
+
+    .top-menu {
+        margin-left: 0;
+        width: 25%;
+    }
+
+}
+
 .about {
     display: flex;
-    width: 280px;
+    width: 13.361111111%;
+    height: 100%;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 30px;
     align-items: center;
     justify-content: center;
 }

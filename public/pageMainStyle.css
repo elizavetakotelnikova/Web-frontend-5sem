@@ -73,23 +73,41 @@ button:hover {
 }
 .top-container {
     display: flex;
+    /*background-color: #FAF8F7;*/
     width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    border-bottom: 5px solid black;
+    height: 105px;
+    margin-top: 0;
+    border-bottom: 1px solid #EBEBEB;
 }
 
 .logo-wrapper {
     display: flex;
-    height: 100px;
-    width: 250px;
+    height: 100%;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    min-width: 175px;
+}
+
+#logo_link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#logo_link img {
+    width: 100%;
+    max-width: 250px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .motto {
     display: flex;
     position: relative;
-    width: 900px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     color: #000000;
     max-width: fit-content;
     margin-left: auto;
@@ -101,9 +119,10 @@ button:hover {
 .top-menu {
     display: flex;
     position: relative;
+    width: 25%;
     margin-right: 0;
-    width: 300px;
-    height: 100px;
+    margin-left: auto;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -122,8 +141,7 @@ button:hover {
 }
 
 .account {
-    width: 110px;
-    margin-right: 15px;
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -143,13 +161,12 @@ button:hover {
     border-radius: 5%;
 }
 
-#aboutBtn:hover {
+#aboutBtn:hover, #catalogBtn:hover {
     background-color: #f1f1f1;
 }
 
 .cart {
-    width: 110px;
-    margin-left: 15px;
+    width: 50%;
 }
 
 .lower-container {
@@ -179,7 +196,7 @@ button:hover {
 
 #catalogBtn {
     background-color: #FFFFFF;
-    border: darkgray 1px solid;
+    border: #a9a9a9 1px solid;
     color: #000000;
     font-size: 18px;
     margin: 0;
@@ -199,7 +216,7 @@ button:hover {
 
 #aboutForm {
     display: flex;
-    position: relative;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
 }
@@ -298,6 +315,27 @@ button:hover {
     border: none;
 }
 
+@media(max-width: 700px) {
+    .motto {
+        display: none;
+    }
+
+    .top-menu {
+        margin-left: auto;
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 701px) {
+
+    .top-menu {
+        margin-left: 0;
+        width: 25%;
+    }
+
+}
+
 .about {
     display: flex;
     width: 13.361111111%;
@@ -319,24 +357,47 @@ button:hover {
     margin-top: 30px;
     align-content: center;
     margin-left: 30px;
+    height: 42.5%;
 }
 
 .bannerRight {
     position: relative;
-    width: 400px;
     display: block;
-    margin-left: 60px;
+    margin-left: auto;
     color: #000000;
     text-align: center;
+    height: 100%;
 }
 
 .bannerRight-text-wrapper {
-    left: 45%;
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerRight-text-wrapper img {
+    width: 100%;
+    height: 100%;
 }
 
 .secondLayer-container {
     display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-container {
+    height: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 90%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
 }
 
 .prev-button, .next-button {
@@ -367,12 +428,16 @@ button:hover {
     padding: 0;
     list-style-type:none;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 #bestellers-list li {
     border: none;
     vertical-align: bottom;
     list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .items-slider_slider {
@@ -382,13 +447,13 @@ button:hover {
 }
 
 .item-wrapper {
-    margin-left: 30px;
-    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item-wrapper img {
-    width: 250px;
-    height: 421px;
+    width: 100%;
+    height: 100%;
 }
 
 .items-slider_slider a {
@@ -402,17 +467,37 @@ button:hover {
     text-align: center;
 }
 
-#first_item-wrapper {
-    margin-left: 0;
-    width: 250px;
+@media(max-width: 700px) {
+    .item-wrapper {
+        width: 35vw;
+    }
+
+    #bestellers-list {
+        justify-content: center;
+    }
+
+    .bannerRight {
+        display: none;
+    }
+
 }
 
+@media (min-width: 701px) {
+    .item-wrapper {
+        width: 15vw;
+    }
+
+    #bestellers-list {
+        justify-content: left;
+    }
+
+}
 .technologies {
     border-top: #000000 3px solid;
     margin-bottom: 0;
     align-self: center;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #faf8f7;
     text-align: left;
 }
 
