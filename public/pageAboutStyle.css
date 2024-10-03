@@ -40,6 +40,18 @@ h1 {
     font-weight: 300;
 }
 
+h2 {
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 39px;
+    font-weight: 300;
+}
+
 .title {
     margin-bottom: 40px;
 }
@@ -407,6 +419,30 @@ button:hover {
 .description-text-wrapper {
     color: black;
     text-align: left;
+}
+
+.table-section {
+    position: relative;
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.table-info {
+    display: grid;
+    border-collapse: collapse;
+    color: #000000;
+}
+
+.table-info td, .table-info th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.table-info tr:nth-child(odd) {
+    background-color:#d3d3d3;
 }
 
 .technologies {
