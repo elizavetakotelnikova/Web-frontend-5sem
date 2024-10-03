@@ -401,7 +401,7 @@ button:hover {
     display: flex;
 }
 
-ul {
+.orders ul, .data ul {
     padding: 0;
 }
 
@@ -477,7 +477,7 @@ ul {
     margin-bottom: 0;
     align-self: center;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #faf8f7;
     text-align: left;
 }
 
