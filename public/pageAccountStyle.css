@@ -406,7 +406,7 @@ button:hover {
     margin-top: 30px;
     align-content: center;
     margin-left: 30px;
-    width: 50%;
+    width: 100%;
 }
 
 .orders-text-wrapper, .data-text-wrapper {
@@ -414,7 +414,16 @@ button:hover {
     text-align: center;
 }
 .orders-container {
+    margin-top: 30px;
     color: #000000;
+}
+
+.orders-container li {
+    margin-top: 20px;
+}
+
+.item-text_wrapper {
+    text-align: left;
 }
 
 .data {
@@ -422,7 +431,7 @@ button:hover {
     display: inline-block;
     margin-top: 30px;
     margin-right: 30px;
-    width: 50%;
+    width: 100%;
     border-left: #dddddd 3px solid;
 }
 
@@ -445,6 +454,13 @@ button:hover {
     color: #000000;
     text-align: left;
     margin-top: 30px;
+}
+
+@media screen and (max-width:900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
 }
 
 .technologies {
