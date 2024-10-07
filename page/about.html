@@ -12,21 +12,21 @@
 <body class="body">
 <header class="header">
     <div class="top-container">
-        <div class="logo-wrapper">
+        <div class="top-container__logo">
             <a id="logo_link" href="../index.html">
-                <img src="../public/pics/logoSecond.png" alt="logo">
+                <img href="index.html" src="../public/pics/logoSecond.png" alt="logo">
             </a>
         </div>
-        <div class="motto">
+        <div class="top-container__motto">
             Читать в удовольствие
         </div>
-        <nav class="top-menu">
-            <div class="account">
+        <nav class="top-container__menu">
+            <div class="top-container__account">
                 <a href="../page/account.html">
                     Аккаунт
                 </a>
             </div>
-            <div class="cart">
+            <div class="top-container__cart">
                 <a href="../page/cart.html">
                     Корзина
                 </a>
@@ -35,11 +35,11 @@
     </div>
     </div>
     <div class="lower-container">
-        <div class="lower-container-content">
+        <div class="lower-container__content">
             <div class="dropdown">
-                <button id="catalogBtn">Каталог</button>
+                <button id="dropdown__catalog-btn">Каталог</button>
                 <img src="../public/pics/catalogIcon.png">
-                <nav class="dropdown-content">
+                <nav class="dropdown__content">
                     <ul style="list-style-type:none">
                         <li><a href="#">Книги</a></li>
                         <li><a href="#">Канцелярия</a></li>
@@ -48,14 +48,14 @@
                 </nav>
             </div>
             <div class="search">
-                <form class="search-form">
-                    <input type="search" class="search-input" placeholder="Поиск">
-                    <button class="search-btn"><img src="../public/pics/magnGlass.png"></button>
+                <form class="search__form">
+                    <input type="search" class="search__form__input" placeholder="Поиск">
+                    <button class="search__form__btn"><img src="../public/pics/magnGlass.png"></button>
                 </form>
             </div>
             <div class="about">
-                <form id="aboutForm" action="../page/about.html" target="_blank">
-                    <button id="aboutBtn">
+                <form id="about__form" action="../page/about.html" target="_blank">
+                    <button id="about__form__btn">
                         О нас
                     </button>
                 </form>
@@ -65,7 +65,7 @@
 </header>
 <main id="main-content">
   <section class="description">
-    <div class="description-text-wrapper">
+    <div class="description__text">
       <h1>О нас</h1>
       <p>Книжный дом - новый интернет-магазин, который предоставляет возможность читать выгодно, наслаждаясь любимыми книжными изданиями самым <strong> выгодным </strong>способом.</p>
       <aside>
@@ -101,13 +101,13 @@
         </table>
     </section>
 </main>
-<footer class="technologies">
-    <div class="footer-text">
+<footer class="footer">
+    <div class="footer__text">
         <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
         <p>Подпишитесь на наши обновления в социальных сетях</p>
         <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
     </div>
-    <nav class="socials">
+    <nav class="footer__socials">
         <ul>
             <li><a href="https://vk.com" id="vkLogo"><img src="../public/pics/vkLogo.png"></a></li>
             <li><a href="https://web.telegram.org/" id="tgLogo"><img src="../public/pics/tgLogo.jpg"> </a>
