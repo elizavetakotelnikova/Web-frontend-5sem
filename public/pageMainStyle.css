@@ -30,23 +30,19 @@ body {
     background-size: contain;
 }
 
-blockquote {
-    margin-left: 0;
-}
-
-h1 {
+.body h1 {
     font-size: 29px;
     line-height: 39px;
     font-weight: 300;
 }
 
-h2 {
+.body h2 {
     font-size: 24px;
     line-height: 39px;
     font-weight: 300;
 }
 
-h3 {
+.body h3 {
     font-size: 18px;
     line-height: 39px;
     font-weight: 300;
@@ -54,25 +50,6 @@ h3 {
 
 .title {
     margin-bottom: 40px;
-}
-
-#app {
-    max-width: 1280px;
-}
-
-input {
-    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-button {
-    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #FFDAB9;
-    border: 1px solid rgba(76, 166, 255, 0.2);
-    background-clip: padding-box;
 }
 
 .header {
@@ -83,9 +60,9 @@ button:hover {
     margin: 0;
     height: 210px;
 }
+
 .top-container {
     display: flex;
-    /*background-color: #FAF8F7;*/
     width: 100%;
     height: 105px;
     margin-top: 0;
@@ -101,13 +78,13 @@ button:hover {
     min-width: 175px;
 }
 
-#logo_link {
+.top-container__logo__link {
     display: flex;
     height: 100%;
     width: 100%;
 }
 
-#logo_link img {
+.top-container__logo__link img {
     width: 100%;
     max-width: 250px;
     margin-right: auto;
@@ -160,22 +137,17 @@ button:hover {
     justify-content: center;
 }
 
-.form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-#accountBtn, #cartBtn, #about__form__btn, #dropdown__catalog-btn {
+.about__form__btn, .dropdown__catalog-btn {
     width: 100%;
     height: 60%;
     color: #f0f8ff;
     align-self: center;
     border-radius: 5%;
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    cursor: pointer;
 }
 
-#about__form__btn:hover, #dropdown__catalog-btn:hover {
+.about__form__btn:hover, .dropdown__catalog-btn:hover {
     background-color: #f1f1f1;
 }
 
@@ -206,7 +178,7 @@ button:hover {
     color: black;
 }
 
-#dropdown__catalog-btn {
+.dropdown__catalog-btn {
     background-color: #FFFFFF;
     border: #a9a9a9 1px solid;
     color: #000000;
@@ -219,14 +191,14 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
-#about__form__btn {
+.about__form__btn {
     background-color: #FFFFFF;
     border: #a9a9a9 1px solid;
     color: #000000;
     font-size: 18px;
 }
 
-#about__form {
+.about__form {
     display: flex;
     /* position: absolute; */
     width: 100%;
@@ -315,6 +287,7 @@ button:hover {
     font-size: 18px;
     text-align: center;
     background-color: #FFFFFF;
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .search__form__input:focus {
@@ -329,6 +302,7 @@ button:hover {
     border: none;
     background: none;
     height: 25px;
+    cursor: pointer;
 }
 
 .search__form__btn:hover {
@@ -356,7 +330,7 @@ button:hover {
         width: 60%;
     }
 
-    #dropdown__catalog-btn {
+    .dropdown__catalog-btn {
         display: none;
     }
 
@@ -380,7 +354,7 @@ button:hover {
         margin-right: auto
     }
 
-    #about__form__btn {
+    .about__form__btn {
         font-size: 12px;
     }
 }
@@ -464,6 +438,14 @@ button:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.slider-container__slider__prev-btn:hover, .slider-container__slider__next-btn:hover {
+    background-color: #FFDAB9;
+    border: 1px solid rgba(76, 166, 255, 0.2);
+    background-clip: padding-box;
 }
 
 .bestsellers__title {
@@ -484,7 +466,7 @@ button:hover {
     display: block;
 }
 
-#book-gallery__items {
+.book-gallery__items {
     padding: 0;
     list-style-type:none;
     display: flex;
@@ -492,7 +474,7 @@ button:hover {
     width: 100%;
 }
 
-#book-gallery__items li {
+.book-gallery__items li {
     border: none;
     vertical-align: bottom;
     list-style-type: none;
@@ -544,7 +526,7 @@ button:hover {
         width: 35vw;
     }
 
-    #book-gallery__items {
+    .book-gallery__items {
         justify-content: center;
     }
 
@@ -559,7 +541,7 @@ button:hover {
         width: 15vw;
     }
 
-    #book-gallery__items {
+    .book-gallery__items {
         justify-content: left;
     }
 
@@ -576,6 +558,10 @@ button:hover {
 .footer__text {
     margin-left: 30px;
     color:#000000;
+}
+
+.footer__text blockquote {
+    margin-left: 0;
 }
 
 .footer__socials ul {
