@@ -30,28 +30,6 @@ body {
     background-size: contain;
 }
 
-.body h1 {
-    font-size: 29px;
-    line-height: 39px;
-    font-weight: 300;
-}
-
-.body h2 {
-    font-size: 24px;
-    line-height: 39px;
-    font-weight: 300;
-}
-
-.body h3 {
-    font-size: 18px;
-    line-height: 39px;
-    font-weight: 300;
-}
-
-.title {
-    margin-bottom: 40px;
-}
-
 .header {
     display: block;
     position: absolute;
@@ -78,13 +56,13 @@ body {
     min-width: 175px;
 }
 
-.top-container__logo__link {
+.top-container__logo-link {
     display: flex;
     height: 100%;
     width: 100%;
 }
 
-.top-container__logo__link img {
+.top-container_logo-img {
     width: 100%;
     max-width: 250px;
     margin-right: auto;
@@ -137,7 +115,7 @@ body {
     justify-content: center;
 }
 
-.about__form__btn, .dropdown__catalog-btn {
+.about__btn, .dropdown__catalog-btn {
     width: 100%;
     height: 60%;
     color: #f0f8ff;
@@ -147,7 +125,7 @@ body {
     cursor: pointer;
 }
 
-.about__form__btn:hover, .dropdown__catalog-btn:hover {
+.about__btn:hover, .dropdown__catalog-btn:hover {
     background-color: #f1f1f1;
 }
 
@@ -191,7 +169,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.about__form__btn {
+.about__btn {
     background-color: #FFFFFF;
     border: #a9a9a9 1px solid;
     color: #000000;
@@ -318,6 +296,53 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 385px) {
+    .top-container__motto {
+        display: none;
+    }
+
+    .top-container__menu {
+        margin-left: auto;
+        width: 60%;
+    }
+
+    .dropdown__catalog-btn {
+        display: none;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .dropdown img {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dropdown {
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
+    .about {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .about__btn {
+        font-size: 12px;
+    }
+
+    .top-container__menu a {
+        color: black;
+        padding: 12px 6px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .top-container__motto {
         display: none;
@@ -352,7 +377,7 @@ body {
         margin-right: auto
     }
 
-    .about__form__btn {
+    .about__btn {
         font-size: 12px;
     }
 }
@@ -449,7 +474,7 @@ body {
     color:#000000;
 }
 
-.footer__text blockquote {
+.footer__blockquote {
     margin-left: 0;
 }
 
@@ -465,6 +490,6 @@ body {
     filter: drop-shadow(0 0 0.75rem black);
 }
 
-#tgLogo {
+.footer__socials__tg-logo {
     margin-left: 30px;
 }
