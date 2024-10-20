@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Личный кабинет</title>
   <link rel="stylesheet" href="../public/pageAccountStyle.css">
+  <script src="../src/pageLoad.js" defer></script>
+  <script src="../src/currentLocation.js"></script>
 </head>
 <body class="page">
 <header class="page__header">
@@ -22,12 +24,12 @@
     </div>
     <nav class="top-container__menu">
       <div class="top-container__account">
-        <a href="../page/account.html">
+        <a class="account__link" href="../page/account.html">
           Аккаунт
         </a>
       </div>
       <div class="top-container__cart">
-        <a href="../page/cart.html">
+        <a class="cart__link" href="../page/cart.html">
           Корзина
         </a>
       </div>
@@ -129,6 +131,6 @@
     </ul>
   </nav>
 </footer>
-<script type="module" src="/src/main.js"></script>
+<script type="module" src="/src/slider.js"></script>
 </body>
 </html>
