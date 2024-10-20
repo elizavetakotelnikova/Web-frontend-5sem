@@ -2,19 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Главная страница сайта">
-  <meta name="keywords" content="главная, первая, акции, бестселлеры">
+  <meta name="description" content="Личный кабинет">
+  <meta name="keywords" content="аккаунт">
   <meta name="author" content="Котельникова Елизавета">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Главная страница</title>
-  <link rel="stylesheet" href="public/pageMainStyle.css">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="../public/pageCartStyle.css">
 </head>
 <body class="page">
 <header class="page__header">
   <div class="top-container">
     <div class="top-container__logo">
-      <a class="top-container__logo-link" href="./index.html">
-        <img class="top-container__logo-img" src="public/pics/logoSecond.png" alt="logo">
+      <a class="top-container__logo-link" href="../index.html">
+        <img src="../public/pics/logoSecond.png" alt="logo">
       </a>
     </div>
     <div class="top-container__motto">
@@ -22,12 +22,12 @@
     </div>
     <nav class="top-container__menu">
       <div class="top-container__account">
-        <a href="page/account.html">
+        <a href="../page/account.html">
           Аккаунт
         </a>
       </div>
       <div class="top-container__cart">
-        <a href="./page/cart.html">
+        <a href="../page/cart.html">
           Корзина
         </a>
       </div>
@@ -37,7 +37,7 @@
     <div class="lower-container__content">
       <div class="dropdown">
         <button class="dropdown__catalog-btn">Каталог</button>
-        <img class="dropdown__catalog-icon" src="public/pics/catalogIcon.png" alt="catalog-icon">
+        <img class="dropdown__catalog-icon" src="../public/pics/catalogIcon.png" alt="catalog-icon">
         <nav class="dropdown__content">
           <ul style="list-style-type:none">
             <li><a href="#">Книги</a></li>
@@ -49,11 +49,11 @@
       <div class="search">
         <form class="search__form">
           <input type="search" class="search__form__input" placeholder="Поиск">
-          <button class="search__form_btn"><img src="public/pics/magnGlass.png" alt="search__btn"></button>
+          <button class="search__form_btn"><img src="../public/pics/magnGlass.png"></button>
         </form>
       </div>
       <div class="about">
-        <form class="about__form" action="page/about.html" target="_self">
+        <form class="about__form" action="../page/about.html" target="_self">
           <button class="about__btn">
             О нас
           </button>
@@ -63,60 +63,41 @@
   </div>
 </header>
 <main class="page__main-content">
-  <section class="sales">
-    <div class="sales-layer">
-      <div class="slider-container">
-        <div class="slider-container__slider">
-          <img src="public/pics/salesStevenKing.png" alt="Акция №1">
-          <img src="public/pics/salesHarryPotter.png" alt="Акция №2">
-        </div>
-        <div>
-          <button class="slider-container__slider_prev-btn" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-          <button class="slider-container__slider_next-btn" aria-label="Посмотреть следующий слайд">&gt</button>
-        </div>
-      </div>
-      <div class="right-banner">
-        <div class="right-banner__img">
-          <img src="public/pics/bookShelf.png" alt="right-banner__img">
-        </div>
-      </div>
+  <section class="cart">
+    <div class="cart__text">
+      <b>Моя корзина</b>
     </div>
-  </section>
-  <section class="bestsellers">
-    <div class="bestsellers__title">
-      <h1><b>Бестселлеры</b></h1>
-    </div>
-    <div class="bestsellers__item-gallery">
+    <div class="cart__item-gallery">
       <div class="item-gallery__slider">
         <ul class="item-gallery__list">
           <li>
             <div class="item-gallery__item">
-              <img src="public/pics/harryPotter.png" alt="Гарри Поттер и Принц-полукровка">
-              <div class="book-gallery__item_text">
+              <img src="../public/pics/harryPotter.png" alt="Гарри Поттер и Принц-полукровка">
+              <div class="item-gallery__item_text-wrapper">
                 <a href="/item/HarryPotter"> <p>Гарри Поттер и Принц-полукровка</p></a>
               </div>
             </div>
           </li>
           <li>
             <div class="item-gallery__item">
-              <img src="public/pics/sherlockHolmes.png" alt="Приключения Шерлока Холмса">
-              <div class="book-gallery__item_text">
+              <img src="../public/pics/sherlockHolmes.png" alt="Приключения Шерлока Холмса">
+              <div class="item-gallery__item_text-wrapper">
                 <a href="/item/sherlock-holmes"><p>Приключения Шерлока Холмса</p></a>
               </div>
             </div>
           </li>
           <li>
             <div class="item-gallery__item">
-              <img src="public/pics/gameOfThrones.png" alt="Игра престолов">
-              <div class="book-gallery__item_text">
+              <img src="../public/pics/gameOfThrones.png" alt="Игра престолов">
+              <div class="item-gallery__item_text-wrapper">
                 <a href="/item/game-of-thrones"><p> Игра Престолов</p></a>
               </div>
             </div>
           </li>
           <li>
             <div class="item-gallery__item">
-              <img src="public/pics/item4.png" alt="Пикник на обочине">
-              <div class="book-gallery__item_text">
+              <img src="../public/pics/item4.png" alt="Пикник на обочине">
+              <div class="item-gallery__item_text-wrapper">
                 <a href="/item/piknik-na-obochine"><p> Пикник на обочине</p></a>
               </div>
             </div>
@@ -134,12 +115,12 @@
   </div>
   <nav class="footer__socials">
     <ul>
-      <li><a class="footer__socials_vk-logo" href="https://vk.com"><img src="public/pics/vkLogo.png" alt="vk-logo"></a></li>
-      <li><a class="footer__socials_tg-logo" href="https://web.telegram.org/"><img src="public/pics/tgLogo.jpg" alt="vk-logo"> </a>
+      <li><a class="footer__socials_vk-logo" href="https://vk.com"><img src="../public/pics/vkLogo.png" alt="vk-logo"></a></li>
+      <li><a class="footer__socials_tg-logo" href="https://web.telegram.org/"><img src="../public/pics/tgLogo.jpg" alt="vk-logo"> </a>
       </li>
     </ul>
   </nav>
 </footer>
-<script type="module" src="src/main.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
