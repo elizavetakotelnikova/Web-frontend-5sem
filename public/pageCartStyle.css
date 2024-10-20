@@ -36,7 +36,7 @@
     margin-top: 210px;
 }
 
-.content {
+.cart {
     display: block;
     position: relative;
     height: fit-content;
@@ -44,7 +44,7 @@
     margin-left: 30px;
 }
 
-.content__text {
+.cart__text {
     color: black;
     text-align: left;
     font-size: 24px;

@@ -109,6 +109,11 @@
     text-underline-offset: 3px;
 }
 
+.top-container__menu a.active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .top-container__account {
     width: 50%;
     align-items: center;
