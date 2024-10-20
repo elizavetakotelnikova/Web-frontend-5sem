@@ -1,7 +1,7 @@
 // Getting sliders elements from html document
 const slider = document.querySelector('.slider-container__slider');
-const prevButton = document.querySelector('.slider-container__slider__prev-btn');
-const nextButton = document.querySelector('.slider-container__slider__next-btn');
+const prevButton = document.querySelector('.slider-container__slider_prev-btn');
+const nextButton = document.querySelector('.slider-container__slider_next-btn');
 const slides = Array.from(slider.querySelectorAll('img'));
 const slideCount = slides.length;
 let slideIndex = 0;

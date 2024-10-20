@@ -274,14 +274,14 @@
     outline: 1px solid blue
 }
 
-.search__form__btn {
+.search__form_btn {
     border: none;
     background: none;
     height: 25px;
     cursor: pointer;
 }
 
-.search__form__btn:hover {
+.search__form_btn:hover {
     background: none;
     border: none;
 }
@@ -422,31 +422,6 @@
     text-align: left;
 }
 
-.table-section {
-    position: relative;
-    margin-top: 30px;
-    align-content: center;
-    margin-left: 30px;
-    text-align: left;
-    margin-bottom: 30px;
-    margin-right: 30px;
-}
-
-.table-info {
-    display: grid;
-    border-collapse: collapse;
-    color: #000000;
-}
-
-.table-info td, .table-info th {
-    border: 1px solid #dddddd;
-    padding: 8px;
-}
-
-.table-info tr:nth-child(odd) {
-    background-color:#d3d3d3;
-}
-
 @media screen and (max-width: 700px) {
     .table-section {
         margin-right: 15px;
@@ -490,6 +465,6 @@
     filter: drop-shadow(0 0 0.75rem black);
 }
 
-.footer__socials__tg-logo {
+.footer__socials_tg-logo {
     margin-left: 30px;
 }
