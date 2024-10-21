@@ -424,7 +424,7 @@
     margin-left: 0;
 }
 
-.footer__socials ul {
+.socials__list {
     list-style-type:none;
     display: inline-flex;
     height: 30px
