@@ -7,7 +7,7 @@
   <meta name="author" content="Котельникова Елизавета">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Личный кабинет</title>
-  <link rel="stylesheet" href="../public/pageAccountStyle.css">
+  <link rel="stylesheet" href="../public/pageStationeryStyle.css">
   <link rel="stylesheet" href="../public/headerFooter.css">
   <script src="../src/pageLoad.js" defer></script>
   <script src="../src/currentLocation.js"></script>
@@ -25,12 +25,12 @@
     </div>
     <nav class="top-container__menu">
       <div class="top-container__account">
-        <a class="account__link" href="../page/account.html">
+        <a href="../page/account.html">
           Аккаунт
         </a>
       </div>
       <div class="top-container__cart">
-        <a class="cart__link" href="../page/cart.html">
+        <a href="../page/cart.html">
           Корзина
         </a>
       </div>
@@ -66,57 +66,49 @@
   </div>
 </header>
 <main class="page__main-content">
-  <div class="main-container">
-  <section class="orders">
-    <div class="orders__text">
-      <b>Заказы</b>
+  <section class="cart">
+    <div class="cart__text">
+      <b>Канцелярские товары</b>
     </div>
-    <div class="orders__orders-container">
-      <ul style="list-style-type:none" class="orders-container__list">
-        <li>
-          <div class="item-gallery__item">
-            <div class="orders-container__item-wrapper">
-              Дж. К. Роулинг "Гарри-Поттер и Принц-полукровка" 1 шт.
-              Агата Кристи "Убийство в Восточном экспрессе" 2 шт.
-              <a href="/item/HarryPotter" Гарри Поттер и Принц-полукровка></a>
+    <div class="cart__item-gallery">
+      <div class="item-gallery__slider">
+        <ul class="item-gallery__list">
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/notebookWithPen.png" alt="Блокнот с ручкой Papirus">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/aaf62368-8c66-496d-8595-935859ff926b"> <p>Блокнот с ручкой "Papirus"</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-gallery__item">
-            <div class="item-text_wrapper">
-              Артур Конан Дойль "Приключения Шерлока Холмса" 1 шт.
-              <a href="/item/SherlockHolmes" Приключения Шерлока Холмса></a>
+          </li>
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/notebookAttacheBrightColors.png" alt="Блокнот Attache Bright Colors желтый">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/4d7b5140-7e77-42f3-b377-f03d1c64727d"><p>Блокнот Attache Bright Colors желтый</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="data">
-    <div class="data__text">
-      <b>Мои данные</b>
-    </div>
-    <div class="data-container">
-      <ul class="data-container__list" style="list-style-type:none">
-        <li>
-          <div class="data-container__address">
-            <div class="data-container__address_wrapper">
-              Адрес электронной почты: elizaveta1408li@gmai.com
+          </li>
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/schoolNotebook.png" alt="Тетрадь школьная в клетку">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/b8d44659-01fd-481b-846b-694315a06111"><p>Тетрадь школьная в клетку, 18 листов</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="data-container__name">
-            <div class="data-container__name_wrapper">
-              Имя: Котельникова Елизавета
+          </li>
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/notebookKraft.png" alt="Блокнот на спирали Kraft">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/276a6b73-940f-4dcb-9408-bfb894508613"><p>Блокнот на спирали Kraft</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  </div>
 </main>
 <footer class="footer">
   <div class="footer__text">

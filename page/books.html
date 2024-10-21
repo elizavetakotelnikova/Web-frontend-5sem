@@ -7,7 +7,7 @@
   <meta name="author" content="Котельникова Елизавета">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Личный кабинет</title>
-  <link rel="stylesheet" href="../public/pageAccountStyle.css">
+  <link rel="stylesheet" href="../public/pageBooksStyle.css">
   <link rel="stylesheet" href="../public/headerFooter.css">
   <script src="../src/pageLoad.js" defer></script>
   <script src="../src/currentLocation.js"></script>
@@ -25,12 +25,12 @@
     </div>
     <nav class="top-container__menu">
       <div class="top-container__account">
-        <a class="account__link" href="../page/account.html">
+        <a href="../page/account.html">
           Аккаунт
         </a>
       </div>
       <div class="top-container__cart">
-        <a class="cart__link" href="../page/cart.html">
+        <a href="../page/cart.html">
           Корзина
         </a>
       </div>
@@ -66,57 +66,49 @@
   </div>
 </header>
 <main class="page__main-content">
-  <div class="main-container">
-  <section class="orders">
-    <div class="orders__text">
-      <b>Заказы</b>
+  <section class="content">
+    <div class="content__text">
+      <b>Книги</b>
     </div>
-    <div class="orders__orders-container">
-      <ul style="list-style-type:none" class="orders-container__list">
-        <li>
-          <div class="item-gallery__item">
-            <div class="orders-container__item-wrapper">
-              Дж. К. Роулинг "Гарри-Поттер и Принц-полукровка" 1 шт.
-              Агата Кристи "Убийство в Восточном экспрессе" 2 шт.
-              <a href="/item/HarryPotter" Гарри Поттер и Принц-полукровка></a>
+    <div class="content__item-gallery">
+      <div class="item-gallery__slider">
+        <ul class="item-gallery__list">
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/harryPotter.png" alt="Гарри Поттер и Принц-полукровка">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/HarryPotter"> <p>Гарри Поттер и Принц-полукровка</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-gallery__item">
-            <div class="item-text_wrapper">
-              Артур Конан Дойль "Приключения Шерлока Холмса" 1 шт.
-              <a href="/item/SherlockHolmes" Приключения Шерлока Холмса></a>
+          </li>
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/sherlockHolmes.png" alt="Приключения Шерлока Холмса">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/sherlock-holmes"><p>Приключения Шерлока Холмса</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="data">
-    <div class="data__text">
-      <b>Мои данные</b>
-    </div>
-    <div class="data-container">
-      <ul class="data-container__list" style="list-style-type:none">
-        <li>
-          <div class="data-container__address">
-            <div class="data-container__address_wrapper">
-              Адрес электронной почты: elizaveta1408li@gmai.com
+          </li>
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/gameOfThrones.png" alt="Игра престолов">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/game-of-thrones"><p> Игра Престолов</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="data-container__name">
-            <div class="data-container__name_wrapper">
-              Имя: Котельникова Елизавета
+          </li>
+          <li>
+            <div class="item-gallery__item">
+              <img src="../public/pics/item4.png" alt="Пикник на обочине">
+              <div class="item-gallery__item_text-wrapper">
+                <a href="/item/piknik-na-obochine"><p> Пикник на обочине</p></a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  </div>
 </main>
 <footer class="footer">
   <div class="footer__text">

@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="description" content="Главная страница сайта">
   <meta name="keywords" content="главная, первая, акции, бестселлеры">
   <meta name="author" content="Котельникова Елизавета">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница</title>
   <link rel="stylesheet" href="public/pageMainStyle.css">
+  <link rel="stylesheet" href="public/headerFooter.css">
+  <script src="src/pageLoad.js" defer></script>
 </head>
-<body class="body">
-<header class="header">
+<body class="page">
+<header class="page__header">
   <div class="top-container">
     <div class="top-container__logo">
-      <a class="top-container__logo__link" href="./index.html">
-        <img href="index.html" src="./public/pics/logoSecond.png" alt="logo">
+      <a class="top-container__logo-link" href="./index.html">
+        <img class="top-container__logo-img" src="public/pics/logoSecond.png" alt="logo">
       </a>
     </div>
     <div class="top-container__motto">
@@ -22,40 +24,39 @@
     </div>
     <nav class="top-container__menu">
       <div class="top-container__account">
-        <a href="./page/account.html">
+        <a href="page/account.html">
           Аккаунт
         </a>
       </div>
       <div class="top-container__cart">
-        <a href="/page/cart.html">
+        <a href="./page/cart.html">
           Корзина
         </a>
       </div>
     </nav>
   </div>
-  </div>
   <div class="lower-container">
     <div class="lower-container__content">
       <div class="dropdown">
         <button class="dropdown__catalog-btn">Каталог</button>
-        <img src="./public/pics/catalogIcon.png">
+        <img class="dropdown__catalog-icon" src="public/pics/catalogIcon.png" alt="catalog-icon">
         <nav class="dropdown__content">
-          <ul style="list-style-type:none">
-            <li><a href="#">Книги</a></li>
-            <li><a href="#">Канцелярия</a></li>
-            <li><a href="#">Другое</a></li>
+          <ul style="list-style-type:none" class="dropdown__list">
+            <li><a href="page/books.html">Книги</a></li>
+            <li><a href="page/stationery.html">Канцелярия</a></li>
+            <li><a href="page/other.html">Другое</a></li>
           </ul>
         </nav>
       </div>
       <div class="search">
         <form class="search__form">
           <input type="search" class="search__form__input" placeholder="Поиск">
-          <button class="search__form__btn"><img src="./public/pics/magnGlass.png"></button>
+          <button class="search__form_btn"><img src="public/pics/magnGlass.png" alt="search__btn"></button>
         </form>
       </div>
       <div class="about">
-        <form class="about__form" action="./page/about.html" target="_blank">
-          <button class="about__form__btn">
+        <form class="about__form" action="page/about.html" target="_self">
+          <button class="about__btn">
             О нас
           </button>
         </form>
@@ -63,7 +64,7 @@
     </div>
   </div>
 </header>
-<main id="main-content">
+<main class="page__main-content">
   <section class="sales">
     <div class="sales-layer">
       <div class="slider-container">
@@ -72,13 +73,13 @@
           <img src="public/pics/salesHarryPotter.png" alt="Акция №2">
         </div>
         <div>
-          <button class="slider-container__slider__prev-btn" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-          <button class="slider-container__slider__next-btn" aria-label="Посмотреть следующий слайд">&gt</button>
+          <button class="slider-container__slider_prev-btn" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+          <button class="slider-container__slider_next-btn" aria-label="Посмотреть следующий слайд">&gt</button>
         </div>
       </div>
       <div class="right-banner">
         <div class="right-banner__img">
-          <img src="./public/pics/bookShelf.png">
+          <img src="public/pics/bookShelf.png" alt="right-banner__img">
         </div>
       </div>
     </div>
@@ -87,37 +88,37 @@
     <div class="bestsellers__title">
       <h1><b>Бестселлеры</b></h1>
     </div>
-    <div class="book-gallery">
-      <div class="book-gallery__slider">
-        <ul class="book-gallery__items">
+    <div class="bestsellers__item-gallery">
+      <div class="item-gallery__slider">
+        <ul class="item-gallery__list">
           <li>
-            <div class="book-gallery__item">
+            <div class="item-gallery__item">
               <img src="public/pics/harryPotter.png" alt="Гарри Поттер и Принц-полукровка">
-              <div class="book-gallery__item__text">
+              <div class="book-gallery__item_text">
                 <a href="/item/HarryPotter"> <p>Гарри Поттер и Принц-полукровка</p></a>
               </div>
             </div>
           </li>
           <li>
-            <div class="book-gallery__item">
+            <div class="item-gallery__item">
               <img src="public/pics/sherlockHolmes.png" alt="Приключения Шерлока Холмса">
-              <div class="book-gallery__item__text">
+              <div class="book-gallery__item_text">
                 <a href="/item/sherlock-holmes"><p>Приключения Шерлока Холмса</p></a>
               </div>
             </div>
           </li>
           <li>
-            <div class="book-gallery__item">
+            <div class="item-gallery__item">
               <img src="public/pics/gameOfThrones.png" alt="Игра престолов">
-              <div class="book-gallery__item__text">
+              <div class="book-gallery__item_text">
                 <a href="/item/game-of-thrones"><p> Игра Престолов</p></a>
               </div>
             </div>
           </li>
           <li>
-            <div class="book-gallery__item">
+            <div class="item-gallery__item">
               <img src="public/pics/item4.png" alt="Пикник на обочине">
-              <div class="book-gallery__item__text">
+              <div class="book-gallery__item_text">
                 <a href="/item/piknik-na-obochine"><p> Пикник на обочине</p></a>
               </div>
             </div>
@@ -131,16 +132,16 @@
   <div class="footer__text">
     <h2>Книжный дом - онлайн-магазин книг и канцелярских товаров.</h2>
     <p>Подпишитесь на наши обновления в социальных сетях</p>
-    <blockquote>В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
+    <blockquote class="footer__blockquote">В нашем магазине вы найдете книги на практически любые темы: от E = mc<sup>2</sup> до "Мастера и Маргариты"&#033</blockquote>
   </div>
   <nav class="footer__socials">
-    <ul>
-      <li><a href="https://vk.com" id="vkLogo"><img src="./public/pics/vkLogo.png"></a></li>
-      <li><a href="https://web.telegram.org/" id="tgLogo"><img src="./public/pics/tgLogo.jpg"> </a>
+    <ul class="socials__list">
+      <li><a class="footer__socials_vk-logo" href="https://vk.com"><img src="public/pics/vkLogo.png" alt="vk-logo"></a></li>
+      <li><a class="footer__socials_tg-logo" href="https://web.telegram.org/"><img src="public/pics/tgLogo.jpg" alt="vk-logo"> </a>
       </li>
     </ul>
   </nav>
 </footer>
-<script type="module" src="./src/main.js"></script>
+<script type="module" src="src/slider.js"></script>
 </body>
 </html>
