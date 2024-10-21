@@ -405,3 +405,37 @@
     }
 
 }
+
+.footer {
+    border-top: #000000 3px solid;
+    margin-bottom: 0;
+    align-self: center;
+    width: 100%;
+    background-color: #faf8f7;
+    text-align: left;
+}
+
+.footer__text {
+    margin-left: 30px;
+    color:#000000;
+}
+
+.footer__blockquote {
+    margin-left: 0;
+}
+
+.footer__socials ul {
+    list-style-type:none;
+    display: inline-flex;
+    height: 30px
+}
+
+.footer__socials img {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.footer__socials_tg-logo {
+    margin-left: 30px;
+}
