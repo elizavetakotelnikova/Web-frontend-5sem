@@ -2,15 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Личный кабинет">
-  <meta name="keywords" content="аккаунт">
+  <meta name="description" content="Конструктор расписания">
+  <meta name="keywords" content="расписание">
   <meta name="author" content="Котельникова Елизавета">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Личный кабинет</title>
-  <link rel="stylesheet" href="../public/pageAccountStyle.css">
   <link rel="stylesheet" href="../public/headerFooter.css">
+  <link rel="stylesheet" href="../public/scheduler.css">
   <script src="../src/pageLoad.js" defer></script>
   <script src="../src/currentLocation.js"></script>
+  <script src="../src/scheduler.js"></script>
 </head>
 <body class="page">
 <header class="page__header">
@@ -25,12 +26,12 @@
     </div>
     <nav class="top-container__menu">
       <div class="top-container__account">
-        <a class="account__link" href="../page/account.html">
+        <a href="../page/account.html">
           Аккаунт
         </a>
       </div>
       <div class="top-container__cart">
-        <a class="cart__link" href="../page/cart.html">
+        <a href="../page/cart.html">
           Корзина
         </a>
       </div>
@@ -71,57 +72,41 @@
   </div>
 </header>
 <main class="page__main-content">
-  <div class="main-container">
-  <section class="orders">
-    <div class="orders__text">
-      <b>Заказы</b>
+  <section class="constructor">
+    <div class="constructor__text">
+      <b>Конструктор расписания</b>
     </div>
-    <div class="orders__orders-container">
-      <ul style="list-style-type:none" class="orders-container__list">
-        <li>
-          <div class="item-gallery__item">
-            <div class="orders-container__item-wrapper">
-              Дж. К. Роулинг "Гарри-Поттер и Принц-полукровка" 1 шт.
-              Агата Кристи "Убийство в Восточном экспрессе" 2 шт.
-              <a href="/item/HarryPotter" Гарри Поттер и Принц-полукровка></a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-gallery__item">
-            <div class="item-text_wrapper">
-              Артур Конан Дойль "Приключения Шерлока Холмса" 1 шт.
-              <a href="/item/SherlockHolmes" Приключения Шерлока Холмса></a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="data">
-    <div class="data__text">
-      <b>Мои данные</b>
-    </div>
-    <div class="data-container">
-      <ul class="data-container__list" style="list-style-type:none">
-        <li>
-          <div class="data-container__address">
-            <div class="data-container__address_wrapper">
-              Адрес электронной почты: elizaveta1408li@gmai.com
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="data-container__name">
-            <div class="data-container__name_wrapper">
-              Имя: Котельникова Елизавета
-            </div>
-          </div>
-        </li>
-      </ul>
+    <div class="constructor__main">
+      <div class="constructor__values">
+        <form class="constructor__form">
+          <label class="constructor__label" for="form__days">Количество дней в расписании:</label>
+          <select id="form__days">
+            <option value="5" selected>5 дней</option>
+            <option value="6">6 дней</option>
+          </select>
+
+          <label class="constructor__label" for="form__lessons">Максимальное количество занятий в день:</label>
+          <input class="constructor__input" type="number" id="form__lessons" min="1" max="10" value="6">
+
+          <label class="constructor__label" for="form__language">Язык расписания:</label>
+          <select id="form__language">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+          </select>
+
+          <button class="constructor__generator" type="submit">Сгенерировать расписание</button>
+        </form>
+
+        <form class="constructor__saving-form">
+          <button class="saving-form__btn" type="submit">Сохранить расписание</button>
+        </form>
+        <form class="constructor__load-form">
+          <button class="load-form__btn" type="submit">Загрузить расписание</button>
+        </form>
+      </div>
+      <div class="constructor__schedule"></div>
     </div>
   </section>
-  </div>
 </main>
 <footer class="footer">
   <div class="footer__text">
@@ -137,6 +122,5 @@
     </ul>
   </nav>
 </footer>
-<script type="module" src="/src/slider.js"></script>
 </body>
 </html>

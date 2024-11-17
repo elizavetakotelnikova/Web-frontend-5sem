@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "JetBrains Sans";
+    src: url("fonts/JetBrainsSans-Regular.woff2");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrainsMono-Regular.woff2");
+}
+
+:root {
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: normal;
+}
+
+.page {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page__main-content {
+    display: block;
+    width: 100%;
+    margin-top: 210px;
+}
+
+.constructor {
+    display: block;
+    position: relative;
+    height: fit-content;
+    margin: 30px;
+}
+
+.constructor__text {
+    color: black;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.constructor__main {
+    display: flex;
+}
+
+.constructor__values {
+    display: block;
+    width: 50%;
+    height: 40%;
+}
+
+.constructor__form, .constructor__load-form, .constructor__saving-form {
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.constructor__label, #form__days, #form__language, .constructor__input {
+    display: flex;
+    margin: 10px 0;
+    color: #000000;
+}
+
+#form__days, #form__language, .constructor__input {
+    display: flex;
+    width: 70%;
+    margin-left: 0;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: #a9a9a9 1px solid;
+    color: #000000;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+}
+#form__days:hover, #form__language:hover, .constructor__input:hover {
+    background-color: #f1f1f1;
+}
+
+.constructor__generator, .load-form__btn, .saving-form__btn {
+    width: 70%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #e5e0df;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.constructor__schedule {
+    color: black;
+    margin-top: 20px;
+    width: 50%;
+    justify-self: center;
+}
+
+.schedule__table, .schedule__table-header, .schedule__table-row, .schedule__table-cell {
+    color: black;
+    border: #a9a9a9 1px solid;
+}
+
+.schedule__table {
+    display: grid;
+}
+
+.schedule__table-header, .schedule__table-row, .schedule__table-cell {
+    padding: 7px;
+}
+.schedule__table input {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 0;
+    color: #000000;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+}
+
+.schedule__table-header {
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 701px) {
+    .constructor__main {
+        display: block;
+    }
+
+    .constructor__schedule {
+        width: 100%;
+    }
+
+    .constructor__values {
+        width: 100%;
+    }
+}
