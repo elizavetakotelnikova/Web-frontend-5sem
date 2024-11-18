@@ -343,7 +343,7 @@
 
     .top-container__menu a {
         color: black;
-        padding: 12px 6px;
+        padding: 0;
         text-decoration: none;
         display: block;
         font-size: 16px;
@@ -386,6 +386,18 @@
 
     .about__btn {
         font-size: 12px;
+    }
+
+    .top-container__cart {
+        display: none;
+    }
+
+    .top-container__menu a {
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
     }
 }
 
