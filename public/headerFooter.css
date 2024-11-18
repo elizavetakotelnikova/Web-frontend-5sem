@@ -400,6 +400,7 @@
 
     .top-container__menu {
         margin-left: auto;
+        margin-right: 20px;
         width: 40%;
     }
 
