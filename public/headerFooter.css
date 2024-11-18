@@ -139,7 +139,7 @@
 }
 
 .top-container__constructor {
-    width: 50%;
+    width: fit-content;
 }
 
 .lower-container {
@@ -310,7 +310,7 @@
 
     .top-container__menu {
         margin-left: auto;
-        width: 60%;
+        width: fit-content;
     }
 
     .dropdown__catalog-btn {
@@ -411,6 +411,7 @@
     .top-container__menu {
         margin-left: 0;
         width: 25%;
+        margin-right: 30px;
     }
 
 }
