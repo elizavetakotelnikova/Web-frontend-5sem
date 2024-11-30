@@ -9,7 +9,8 @@
   <title>Личный кабинет</title>
   <link rel="stylesheet" href="../public/pageBooksStyle.css">
   <link rel="stylesheet" href="../public/headerFooter.css">
-  <script src="../src/pageLoad.js" defer></script>
+  <link rel="stylesheet" href="../public/pageOtherStyle.css">
+  <script src="../src/lab-6.js" defer></script>
   <script src="../src/currentLocation.js"></script>
 </head>
 <body class="page">
@@ -71,40 +72,12 @@
       <b>Другое</b>
     </div>
     <div class="content__item-gallery">
+      <div class="item-gallery__preloader">
+        <img class="preloader__image" src="/public/pics/preloader.gif" alt="preloader">
+      </div>
+      <div class="item-gallery__error-wrapper"></div>
       <div class="item-gallery__slider">
         <ul class="item-gallery__list">
-          <li>
-            <div class="item-gallery__item">
-              <img src="../public/pics/harryPotter.png" alt="Гарри Поттер и Принц-полукровка">
-              <div class="item-gallery__item_text-wrapper">
-                <a href="/item/HarryPotter"> <p>Гарри Поттер и Принц-полукровка</p></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="item-gallery__item">
-              <img src="../public/pics/sherlockHolmes.png" alt="Приключения Шерлока Холмса">
-              <div class="item-gallery__item_text-wrapper">
-                <a href="/item/sherlock-holmes"><p>Приключения Шерлока Холмса</p></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="item-gallery__item">
-              <img src="../public/pics/gameOfThrones.png" alt="Игра престолов">
-              <div class="item-gallery__item_text-wrapper">
-                <a href="/item/game-of-thrones"><p> Игра Престолов</p></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="item-gallery__item">
-              <img src="../public/pics/item4.png" alt="Пикник на обочине">
-              <div class="item-gallery__item_text-wrapper">
-                <a href="/item/piknik-na-obochine"><p> Пикник на обочине</p></a>
-              </div>
-            </div>
-          </li>
         </ul>
       </div>
     </div>
