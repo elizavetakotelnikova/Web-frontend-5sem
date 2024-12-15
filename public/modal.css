@@ -1,0 +1,55 @@
+
+.jBox-container {
+    line-height: 1.5;
+    color: black;
+}
+
+.jBox-title {
+    color: #00008b;
+}
+
+.subscribe-form {
+    height: 50px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;;
+    border-radius: 1%;
+}
+
+.subscribe-form label {
+    margin: auto 10px auto auto;
+}
+
+.subscribe-form__input {
+    width: 45%;
+    flex-grow: 2;
+    font-size: 18px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 1%;
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.subscribe-form__input:focus {
+    outline: none;
+}
+
+.subscribe-form_btn {
+    border: none;
+    background: none;
+    height: 25px;
+    cursor: pointer;
+    font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.subscribe-form_btn:hover {
+    background: none;
+    border: none;
+}
