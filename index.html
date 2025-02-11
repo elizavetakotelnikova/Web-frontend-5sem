@@ -7,9 +7,19 @@
   <meta name="author" content="Котельникова Елизавета">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница</title>
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script type='module' src="src/newSlider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="public/pageMainStyle.css">
   <link rel="stylesheet" href="public/headerFooter.css">
-  <script src="src/pageLoad.js" defer></script>
+  <script type='module' src="src/modalWindow.js"></script>
+  <link rel="stylesheet" href="public/modal.css">
 </head>
 <body class="page">
 <header class="page__header">
@@ -67,15 +77,17 @@
 <main class="page__main-content">
   <section class="sales">
     <div class="sales-layer">
-      <div class="slider-container">
-        <div class="slider-container__slider">
-          <img src="public/pics/salesStevenKing.png" alt="Акция №1">
-          <img src="public/pics/salesHarryPotter.png" alt="Акция №2">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="public/pics/salesStevenKing.png" alt="Акция №1">
+          </div>
+          <div class="swiper-slide">
+            <img src="public/pics/salesHarryPotter.png" alt="Акция №2">
+          </div>
         </div>
-        <div>
-          <button class="slider-container__slider_prev-btn" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-          <button class="slider-container__slider_next-btn" aria-label="Посмотреть следующий слайд">&gt</button>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
       <div class="right-banner">
         <div class="right-banner__img">
@@ -142,6 +154,5 @@
     </ul>
   </nav>
 </footer>
-<script type="module" src="src/slider.js"></script>
 </body>
 </html>
