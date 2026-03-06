@@ -1,11 +1,7 @@
-Тема проекта - разработка интерфейса книжного интернет-магазина.
-Котельникова Елизавета Владимировна, M3304
+Bookstore Website
 
-Макеты главной страницы:
-![Часть 1 главная страница](https://github.com/user-attachments/assets/141ddbaf-a878-4273-aaec-1e716d9653c9)
+<img width="1634" height="927" alt="image" src="https://github.com/user-attachments/assets/31856289-83aa-4da0-a8f9-af823d79692e" />
 
-![Часть 2 главная страница](https://github.com/user-attachments/assets/b0793502-b202-4231-93a9-7c4d6544c178)
+<img width="1634" height="857" alt="image" src="https://github.com/user-attachments/assets/c06c062a-73ef-4325-9a99-2f182298db57" />
 
-Личный кабинет:
 
-![Личный кабинет](https://github.com/user-attachments/assets/f898a7fe-c305-4ff3-bf61-d245e4b1da96)
